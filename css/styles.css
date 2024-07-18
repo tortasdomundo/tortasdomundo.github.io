@@ -3252,3 +3252,9 @@ background-image: url(https://api.iconify.design/simple-icons:ubereats.svg?heigh
 .my-float{
 	margin-top:16px;
 }
+
+.frosted {
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	border-radius: 16px;
+}
