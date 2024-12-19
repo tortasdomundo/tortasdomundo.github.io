@@ -39,6 +39,25 @@
     embed {
       max-width: 100%;
     }
+    dialog {
+      position: fixed;
+      top: 64px;
+      width: calc(100% - 32px);
+      margin-left: 16px;
+      margin-right: 16px;
+      border: none;
+      background: transparent;
+    }
+    #aviso {
+      padding: 16px;
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: rgba(0, 0, 0, 0.3) 4px 4px 8px -1px;
+    }
+    #aviso  button {
+      background: transparent;
+      border: none;
+    }
+
   </style>
 
   <div class="banner">
@@ -57,8 +76,6 @@
             <ul class="navigation-menu">
               <li class="navigation-item"><a href="#tortas">Tortas</a></li>
               <li class="navigation-item"><a href="#cafes">Cafés</a></li>
-              <li class="navigation-item"><a href="#encomendas">Encomendas</a></li>
-              <li class="navigation-item"><a href="https://qr.tortasdomundo.com.br/cardapio?src=site">Cardápio</a></li>
               <li class="navigation-item"><a href="#localizacao">Localização e Contato</a></li>
             </ul>
             <ul class="navigation-social">
@@ -86,7 +103,7 @@
     <div class="about-block-inner container">
       <div class="clear text-center">
         <div class="about-block-content col-6-l">
-          <h2 class="heading">Tortas</h2>
+          <h2 class="heading">Receitas</h2>
           <p>
             Já imaginou visitar a Jamaica, a França e a Índia em um mesmo dia? Tudo isso é possível através de
             verdadeiras preciosidades do mundo gastronômico.
@@ -152,286 +169,6 @@
     </div>
   </div>
 
-  <div id="encomendas" class="content-block food-menu-block">
-    <div class="food-menu-block-inner container">
-      <h2 class="heading center">Encomendas - Tortas Inteiras</h2>
-      <div class="heading center">
-      <p>
-          Quer comemorar seu aniversário em grande estilo?<br>
-          Uma reunião familiar ou um evento corporativo?<br>
-          Faça a sua encomenda e depois é só se deliciar.
-        </p>
-        <p>
-          <a
-            href="https://qr.tortasdomundo.com.br/encomenda?src=encomenda">Clique
-            aqui</a> para entrar em contato.
-        </p>
-        </div>
-      <div class="clear">
-        <div class="food-menu-content center">
-          <ul class="food-menu-list">
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-noruega">Sukesessterte - Noruega</h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Amêndoas, ovos, açúcar, nata e manteiga.
-                </p>
-              </div>
-            </li>
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-australia">Pavlova - Austrália</h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Merengue, nata, calda de amora e morango, decorada com as frutas da estação.
-                </p>
-              </div>
-            </li>
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-alemanha">Schwarzwälder Kirschtorte - Alemanha</h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Massa à base de trigo, ovos, cacau em pó 50%, com recheio de nata batida e cerejas ao marrasquino.
-                </p>
-              </div>
-            </li>
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-suecia">Prinsesstårta - Suécia</h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Camadas de pão de ló amanteigado, recheadas com geleia de framboesa, creme inglês, nata, coberto com
-                  marzipã de amêndoas.
-                </p>
-              </div>
-            </li>
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-austria">Sachertorte - Áustria</h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Massa à base de chocolate meio amargo, manteiga, trigo e ovos, recheada com geleia de damasco e
-                  coberta com ganache de chocolate meio amargo.
-                </p>
-              </div>
-            </li>
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-franca">Gâteau Opèra - França</h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Camadas intercaladas de creme amanteigado de café, ganache de chocolate meio amargo e massa à base de
-                  farinha de amêndoas, ovos, açúcar e manteiga.
-                </p>
-              </div>
-            </li>
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-uruguai">Torta Chaja - Uruguai</h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Pão de ló recheado com doce de leite e pêssego, coberta com nata batida com açúcar de baunilha.
-                </p>
-              </div>
-            </li>
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-hungria">Dobos Torte - Hungria</h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Camadas de pão de ló amanteigado intercaladas com creme amanteigado de chocolate, decorado com nozes
-                  e caramelo.
-                </p>
-              </div>
-            </li>
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-espanha">Torta Santiago - Espanha</h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Farinha de amêndoa, açúcar, ovos, canela e raspas de limão.
-                </p>
-              </div>
-            </li>
-
-            <!-- MENU -->
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-croacia">Splitska Torta - Croácia</h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Merengue de Figo, amêndoas e uva passa, recheado com creme amanteigado de casca de laranja e
-                  baunilha.
-                </p>
-              </div>
-            </li>
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-italia">Zuccotto - Itália</h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Pão de ló recheado com creme de mascarpone, creme de ricota, nata, raspas de limão, casca de laranja
-                  cristalizada, chocolate 70% e amaretto.
-                </p>
-              </div>
-            </li>
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-argentina ">Postre Balcarce - Argentina </h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Pão de ló recheado com doce de leite, chocolate 100%, creme de ricota com castanha portuguesa, nozes
-                  chilena, suspiro.
-                </p>
-              </div>
-            </li>
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-bulgaria">Garash - Bulgária</h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Merengue de nozes recheado e coberto com ganache de chocolate 70%.
-                </p>
-              </div>
-            </li>
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-servia">Vasina Torta - Sérvia</h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Pão de ló de nozes, umedecida com suco de laranja e recheado com creme amanteigado de chocolate com
-                  nozes e coberto com merengue maçaricado.
-                </p>
-              </div>
-            </li>
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-russia">Medovik - Rússia</h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Massa de mel e recheio de creme.
-                </p>
-              </div>
-            </li>
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-alemanha">Agnes Bernauer Torte - Alemanha</h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Massa de amêndoa, recheado com creme de café, decorado com amêndoas laminadas.
-                </p>
-              </div>
-            </li>
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-jamaica ">Hummingbird - Jamaica </h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Massa de especiarias, banana e abacaxi, com cobertura de cream cheese.
-                </p>
-              </div>
-            </li>
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-hungria">Esterházy Torte - Hungria</h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Merengue de avelã e amêndoas, recheio de creme amanteigado de kirsh, decorado com damasco, amêndoas e
-                  fondant de açúcar.
-                </p>
-              </div>
-            </li>
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-inglaterra">Backewell Tart - Inglaterra</h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Massa recheada com geléia de framboesa e frangipane de amêndoas.
-                </p>
-              </div>
-            </li>
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-romenia ">Joffre- Romênia </h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Masa de chocolate 100%, umedecida com rum e recheio amanteigado de chocolate 100%,
-                </p>
-              </div>
-            </li>
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-italia ">Setteveli - Itália </h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Massa de chocolate 100%, creme crocante de paralise de avelã, creme bávaro com avelã, mousse de
-                  chocolate, glaçagem de chocolate.
-                </p>
-              </div>
-            </li>
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-polonia ">Wuzetka - Polônia </h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Pão de ló de chocolate, umedecido com vodka, recheado com geleia de ameixa, nata e decorada com
-                  ganache de chocolate e cerejas.
-                </p>
-              </div>
-            </li>
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-suica ">Zuguer Kirschtorte - Suíça </h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Merengue de avelã, pão de ló umedecido com kirsh, recheado com creme amanteigado de kirsh e decorado
-                  com amêndoa laminada.
-                </p>
-              </div>
-            </li>
-
-            <li class="food-menu-item food-menu-item">
-              <div class="food-menu-item-header clear">
-                <h3 class="food-menu-heading flags flags-ucrania ">Kyivski Tort - Ucrânia </h3>
-              </div>
-              <div class="food-menu-summary">
-                <p>Merengue de avelã recheado com creme charlote com brandy de jerez e chantilly de chocolate 100%.
-                </p>
-              </div>
-            </li>
-            <!-- /MENU -->
-
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div id="manifesto" class="content-block reviews-block">
     <div class="reviews-block-inner container clear">
       <div class="feature-box text-center col-6-l center-m frosted">
@@ -486,24 +223,16 @@
   <div id="contato" class="footer">
     <div class="footer-inner container">
       <div class="clear">
-        <div class="footer-column col-4-l">
+        <div class="footer-column col-4-l push-2">
           <h3 class="footer-heading">Sobre nós</h3>
           <p>
             Nosso objetivo é trazer receitas clássicas e tradicionais de <strong>diversos países</strong> para que você
             faça uma viagem ao redor do mundo através dos sabores.
           </p>
         </div>
-        <div class="footer-column col-4-l">
-          <h3 class="footer-heading">Encomendas</h3>
-          <p>
-            <a href="https://qr.tortasdomundo.com.br/cardapio?src=site"><strong></strong>Acesse nosso catálogo no Whatsapp</a>
-          </p>
-          <ul class="payment-types icon-list-inline">
-          </ul>
-        </div>
-        <div class="footer-column col-4-l">
-          <h3 class="footer-heading">Localização e Contato</h3>
-          <p><a href="mailto:tortasdomundo@gmail.com" :>tortasdomundo@gmail.com</a></p>
+        <div class="footer-column col-4-l push-2">
+          <h3 class="footer-heading">Localização e Contato:</h3>
+          <p><a href="mailto:tortasdomundo@gmail.com">tortasdomundo@gmail.com</a></p>
           <p>
             <a href="https://g.page/tortasdomundo?share">
               Av. Sen. Souza Naves, 517<br>
@@ -522,11 +251,20 @@
     </div>
   </div>
 
+  <dialog open>
+
+    <div id="aviso" class="frosted">
+      <form style="float:right" method="dialog">
+        <button><i class="fa fa-times" aria-hidden="true"></i></button>
+      </form>
+      <h2 class="heading">Loja Temporariamente Fechada</h2>
+      <p style="text-align: center">Lamentamos informar que a confeitaria Tortas do Mundo está temporariamente fechada, inclusive para encomendas</p>
+
+    </div>
+
+  </dialog>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <a href="https://qr.tortasdomundo.com.br/encomenda?src=botaozap"
-    class="float" target="_blank">
-    <i class="fa fa-whatsapp my-float"></i>
-  </a>
 
   <script src="js/vendor/wow.js"></script>
   <script src="js/vendor/webfontloader.js"></script>
